@@ -1,0 +1,19 @@
+$accent: #00FEFF;
+$dark: #001E42;
+$text: #252D37;
+$white: #ffffff;
+$gray: #F2F2F2;
+$silver: #A5AAAF;
+
+$xl: 1200;
+$lg: 992;
+$md: 768;
+$sm: 576;
+$xsm: 375;
+
+@mixin r($width) {
+    
+    @media only screen and (max-width: $width + "px") {
+        @content;
+    }
+}
