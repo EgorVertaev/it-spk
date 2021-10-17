@@ -1,6 +1,6 @@
 .price {
     padding-top: 100px;
-    
+
     @include r($lg) {
         padding-top: 80px;   
     }
@@ -15,6 +15,10 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 50px;
         grid-column-gap: 20px;
+
+        @include r($md) {
+            grid-template-columns: 1fr;   
+        }
 
         p {
             margin-bottom: 30px;
