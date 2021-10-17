@@ -1,0 +1,47 @@
+.footer {
+    padding: 28px 0;
+    background-color: $dark-700;
+    color: $white;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+   
+
+    &__link {
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+
+    &__tel {
+        font-size: 12px;
+        font-weight: 400;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__link-tel {
+        font-weight: 700;
+        font-size: 18px;
+        margin-right: 7px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-weight: 400;
+    }
+
+    &__content-link {
+        max-width: 300px;
+        text-align: right;
+        margin-bottom: 19px;
+        color: $accent;
+    }
+   
+}
+

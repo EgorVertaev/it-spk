@@ -1,0 +1,87 @@
+
+.top {
+    background-image: url('../images/content/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 101% 570px;
+    background-position: center center;
+    padding-bottom: 70px;
+
+    @include r($md) {
+        background-size: cover;
+    }
+
+    &__title {
+        font-size: 50px;
+        font-weight: 900;
+        color: $accent;
+        line-height: 1.1;
+        padding-top: 190px;
+        padding-left: 15px;
+        margin-bottom: 49px;
+        max-width: 570px;
+
+        @include r($md) {
+            padding-top: 170px;
+            font-size: 36px;   
+            padding-left: 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        @include r($md) {
+            flex-direction: column;   
+        }
+    }
+
+    &__inner {
+        width: 100%;
+
+        @include r($md) {
+            margin-bottom: 36px;   
+        }
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 1;
+        color: $accent;
+        margin-bottom: 6px;
+    }
+
+    &__info {
+        max-width: 200px;
+        color: $white;
+        font-weight: 400;
+        margin-bottom: 28px;
+    }
+
+    &__num {
+        font-size: 24px;
+        font-weight: 700;  
+    }
+
+    &__cash {
+        font-weight: 700;
+    }
+
+    &__icon {
+        fill: $dark;
+    }
+    
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        color: $white;
+        text-align: right;
+
+        @include r($md) {
+            text-align: left;   
+        }
+    }
+}
+

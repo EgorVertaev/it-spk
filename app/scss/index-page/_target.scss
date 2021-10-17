@@ -1,0 +1,52 @@
+.target {
+    padding-top: 100px;
+
+    @include r($lg) {
+        padding-top: 80px;   
+    }
+
+    @include r($md) {
+        padding-top: 60px;   
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include r($lg) {
+            flex-direction: column;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        padding-left: 80px;
+
+        @include r($lg) {
+            padding-left: 0;
+            margin-bottom: 30px;
+        }   
+    }
+
+    &__icon {
+        margin-right: 15px;
+    }
+
+    &__title {
+        max-width: 170px;
+
+    }
+
+    &__subtitle {
+        max-width: 520px;
+        color: $dark;
+        font-size: 24px;
+
+        @include r($lg) {
+            max-width: 100%;   
+        }
+
+    }
+}

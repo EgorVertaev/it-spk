@@ -1,0 +1,32 @@
+.about {
+    padding-top: 70px;
+
+    @include r($md) {
+        padding-top: 46px;
+    }
+    
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        
+        @include r($md) {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        margin-right: 50px;
+        white-space: nowrap;
+
+        @include r($md) {
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text {
+        max-width: 820px;
+        font-weight: 400;
+    }
+}
+

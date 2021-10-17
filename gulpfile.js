@@ -75,6 +75,19 @@ function svgSprite() {
     }))
     .pipe(dest('./build/images'))
 }
+
+function svgSpriteColor() {
+    return src('app/images/sprite-color/*.svg')
+    .pipe(sprite({
+        mode: {
+            stack: {
+                sprite: '../sprite-color.svg'
+            }
+        }
+    }))
+    .pipe(dest('./build/images'))
+}
+
 function html() {
     return src(['app/*.html', '!app/parts/**/*.html'])
     .pipe(fileinclude({
@@ -120,6 +133,7 @@ function watching() {
     watch(['app/*.html'], html)
     watch('app/images/content/*', parallel('images'));
     watch('app/images/sprite/*', parallel('svgSprite'));
+    watch('app/images/sprite-color/*', parallel('svgSpriteColor'));
     watch('app/fonts/*', parallel('fonts'));
 }
 
@@ -130,10 +144,11 @@ exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.svgSprite = svgSprite;
+exports.svgSpriteColor = svgSpriteColor;
 exports.html = html;
 exports.img = img;
 exports.fonts = fonts;
 
 exports.build = series(cleanDist, images, build);
 
-exports.default = series(parallel(styles, scripts, fonts, img, html, images, svgSprite), parallel(browser, watching));
+exports.default = series(parallel(styles, scripts, fonts, img, html, images, svgSprite, svgSpriteColor), parallel(browser, watching));

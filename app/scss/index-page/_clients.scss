@@ -1,0 +1,83 @@
+.client {
+    padding: 100px 0 60px;
+
+    @include r($md) {
+        padding-top: 66px;   
+    }
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 65px;
+        flex-wrap: wrap;
+
+        @include r($md) {
+            justify-content: space-around;
+        }
+    }
+
+    &__item {
+    }
+
+    &__link {
+        outline: transparent;
+        &:focus {
+            box-shadow: 0px 0px 0px 2px $accent;
+        }
+    }
+
+    &__img {
+        object-fit: contain;
+
+        @include r($md) {
+            width: 110px;
+            height: 75px;   
+            filter: grayscale(1)
+        }
+    }
+
+    &__inner {
+        display: flex;  
+
+        @include r($md) {
+            flex-direction: column;   
+        }
+    }
+
+    &__subtitle {
+        color: $silver;
+        font-size: 20px;
+        margin-bottom: 27px;
+    }
+
+    &__content {
+        width: 48%;
+        color: $silver;
+        font-size: 13px;
+        font-weight: 400;
+
+        @include r($md) {
+            width: 100%;   
+        }
+
+        &:first-child {
+            margin-right: 30px;
+
+            p {
+                margin-bottom: 15px;
+            }
+        }
+
+        span {
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+
+

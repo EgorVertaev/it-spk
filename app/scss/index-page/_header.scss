@@ -1,0 +1,108 @@
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 999999;
+
+    &--scroll {
+        background-color: #01254F;
+    }
+
+    &.header--scroll {
+        .header__nav {
+            padding-bottom: 5px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: flex-start;
+        max-width: 1120px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 37px 15px 27px;    
+    }
+
+    &__link {
+        color: $white;
+        margin-right: 25px;  
+    }
+
+    &__lang {
+        color: $accent;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 7px 4px 6px;
+        border: 1px solid $accent;
+        border-radius: 50%;
+        transition: color 0.3s, border-color 0.3s linear;
+
+        @include r($md) {
+            display: none;   
+        }
+
+        &:hover {
+            color: $white;
+            border-color: $white;
+        }
+    }
+
+    &__list {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    &__item {
+        font-weight: 400;
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    &__menu-link {
+        color: $white;
+        transition: color 0.3s linear;
+        outline: transparent;
+        
+        @include r($md) {
+            display: none;
+        }
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus {
+            box-shadow: 0px 0px 0px 2px $accent;
+        }
+    }
+
+    &__contact {
+        text-align: right;
+        color: $white;
+
+        @include r($md) {
+            display: none;
+        }
+
+        p {
+            font-weight: 400;
+        }
+    }
+
+    &__contact-link {
+        font-weight: 700;
+        outline: transparent;
+        transition: color 0.2s linear;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus {
+            box-shadow: 0px 0px 0px 2px $accent;
+        }
+    }
+    
+}
+

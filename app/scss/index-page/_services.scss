@@ -1,0 +1,109 @@
+.services {
+    padding-top: 60px;
+
+    @include r($md) {
+        padding-top: 46px;
+    }
+
+    &__title {
+        margin-bottom: 65px;
+
+        @include r($md) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include r($lg) {
+            justify-content: center;   
+        }
+    }
+
+    &__item {
+        padding-left: 105px;
+        max-width: 310px;
+        margin-bottom: 30px;
+        position: relative;
+        width: 33%;
+        margin-bottom: 65px;
+
+        @include r($lg) {
+            width: 50%;
+            padding-left: 95px;
+        }
+
+        @include r($sm) {
+            width: 100%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 76px;
+            height: 70px;
+            background-image: url('../images/content/services/1.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        &--server::before {
+            background-image: url('../images/content/services/2.svg');
+        }
+        &--1c::before {
+            background-image: url('../images/content/services/3.svg');
+        }
+        &--project::before {
+            background-image: url('../images/content/services/4.svg');
+        }
+        &--copy::before {
+            background-image: url('../images/content/services/5.svg');
+        }
+        &--it::before {
+            background-image: url('../images/content/services/6.svg');
+        }
+    }
+
+    &__subtitle {
+        max-width: 200px;
+        color: $dark;
+        font-size: 18px;
+    }
+
+    &__title-sm {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }    
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        @include r($md) {
+            flex-direction: column;   
+        }
+        
+        p {
+            max-width: 530px;
+            font-size: 18px;
+            font-weight: 400;
+            color: $text;
+
+           &:first-child {
+               @include r($md) {
+                   margin-bottom: 15px;
+               }
+           }
+        }
+    }
+}
+
+
+
