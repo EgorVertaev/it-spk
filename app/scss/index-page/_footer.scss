@@ -6,10 +6,18 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        
+        @include r($sm) {
+            flex-direction: column;   
+        }
+    }
+
+    &__contact {
+        @include r($sm) {
+            margin-bottom: 15px;   
+        }
     }
     
-   
-
     &__link {
         font-weight: 400;
         margin-bottom: 16px;
@@ -18,6 +26,7 @@
     &__tel {
         font-size: 12px;
         font-weight: 400;
+
         &:not(:last-child) {
             margin-bottom: 5px;
         }
@@ -34,6 +43,10 @@
         flex-direction: column;
         align-items: flex-end;
         font-weight: 400;
+
+        @include r($sm) {
+            align-items: flex-start;   
+        }
     }
 
     &__content-link {
@@ -41,6 +54,10 @@
         text-align: right;
         margin-bottom: 19px;
         color: $accent;
+
+        @include r($sm) {
+            text-align: left;   
+        }
     }
    
 }

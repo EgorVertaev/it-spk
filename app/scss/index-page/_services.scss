@@ -21,6 +21,10 @@
         @include r($lg) {
             justify-content: center;   
         }
+
+        @include r($sm) {
+            justify-content: flex-start;   
+        }
     }
 
     &__item {
@@ -95,6 +99,10 @@
             font-size: 18px;
             font-weight: 400;
             color: $text;
+
+            @include r($md) {
+                max-width: 100%;   
+            }
 
            &:first-child {
                @include r($md) {

@@ -26,6 +26,11 @@
             flex-wrap: wrap; 
             justify-content: space-around;
         }
+
+        @include r($sm) {
+            justify-content: flex-start;
+            padding-left: 30px;   
+        }
     }
 
     &__item {

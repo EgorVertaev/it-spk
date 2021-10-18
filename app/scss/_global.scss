@@ -13,6 +13,7 @@ body {
     background-color: $white;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .visually-hidden {
@@ -69,8 +70,16 @@ body {
         background-color: transparent;
         border: 3px solid $dark;
 
+        @include r($sm) {
+            padding: 15px 12px;   
+        }
+
         span {
             margin-right: 12px;
+
+            @include r($sm) {
+                margin-right: 7px;
+            }   
         }
     }
 
