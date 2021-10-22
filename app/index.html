@@ -7,341 +7,414 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <a class="header__link" href="#">
-                <img class="header__logo" src="images/content/logo.svg" alt="logo" width="126" height="42">
-            </a>
-            <button class="header__lang" type="button">ua</button>
-            <ul class="header__list">
-                <li class="header__item">
-                    <a class="header__menu-link" href="#">О нас</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__menu-link" href="#">Услуги</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__menu-link" href="#">Цены</a>
-                </li>
-            </ul>
-            <div class="header__contact"> 
-                <p>lifecell
-                    <a class="header__contact-link" href="tel:+380935412092">+380 93 541 20 92</a>
-                </p>
-                <p>Vodafone
-                    <a class="header__contact-link" href="tel:+380993112979">+380 99 311 29 79</a>
-                </p>
-            </div>
-            <button class="burger" type="button">
-                <span class="visually-hidden">Бургер мню</span>
-                <svg class="burger__icon" width="26" height="18">
-                    <use xlink:href="images/sprite.svg#burger"></use>  
-                </svg> 
-            </button>
-            <div class="menu-mob">
-                
-            </div>
-        </nav>
-    </header>
 
-    <main class="main">
-
-        <section class="top">
-            <div class="container">
-                <h1 class="top__title">
-                    IT-Аутсорсинг компаниям в Киеве
-                </h1>
-                <div class="top__content">
-                    <div class="top__inner">
-                        <h2 class="top__subtitle">Обслуживание компьютеров в Киеве</h2>
-                        <p class="top__info">
-                            От <span class="top__num">315</span><span class="top__cash">грн</span> грн/мес за 1 рабочее место
-                        </p>
-                        <button class="btn top__btn">
-                            <span>Отправить заявку</span>
-                            <svg class="top__icon" width="19" height="13">
-                                <use xlink:href="images/sprite.svg#btn"></use>  
-                            </svg> 
-                        </button>
-                    </div>
-                    <p class="top__text">
-                        Мы знаем как сложно найти хорошую компанию по обслуживанию компьютеров в Киеве. Исправим это!
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="container">
-                <div class="about__inner">
-                    <h2 class="title about__title">
-                        О нас
-                    </h2>
-                    <p class="about__text">
-                        IT-SPK - сервисная компания по обслуживанию АйТи инфраструктуры для бизнеса. Мы небольшая команда фанатов своего дела c многолетним опытом работы. Решаем любые ИТ задачи в Киеве: проектирование, монтаж и поддержка ИТ инфраструктуры, настройка и поддержка серверов, виртуализация, обслуживание компьютеров, поддержка пользователей.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="services">
-            <div class="container">
-                <h2 class="title services__title">
-                    Услуги
-                </h2>
-                <ul class="services__list">
-                    <li class="services__item services__item--comp">
-                        <h3 class="services__subtitle">
-                            Обслуживание компьютеров
-                        </h3>
+        <header class="header">
+            <nav class="header__nav">
+                <a class="header__link" href="#">
+                    <img class="header__logo" src="images/content/logo.svg" alt="logo" width="126" height="42">
+                </a>
+                <button class="header__lang" type="button">ua</button>
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__menu-link header__menu-link-about" href="#about">О нас</a>
                     </li>
-                    <li class="services__item services__item--server">
-                        <h3 class="services__subtitle">
-                            Обслуживание серверов
-                        </h3>
+                    <li class="header__item">
+                        <a class="header__menu-link" href="#services">Услуги</a>
                     </li>
-                    <li class="services__item services__item--1c">
-                        <h3 class="services__subtitle">
-                            Виртуализация 1С
-                        </h3>
-                    </li>
-                    <li class="services__item services__item--project">
-                        <h3 class="services__subtitle">
-                            Аудит ИТ-инфраструктуры
-                            и проектирование
-                        </h3>
-                    </li>
-                    <li class="services__item services__item--copy">
-                        <h3 class="services__subtitle">
-                            Резервное копирование
-                        </h3>
-                    </li>
-                    <li class="services__item services__item--it">
-                        <h3 class="services__subtitle">
-                            Переезд ИТ инфраструктуры
-                        </h3>
+                    <li class="header__item">
+                        <a class="header__menu-link" href="#price">Цены</a>
                     </li>
                 </ul>
-                <h4 class="title services__title-sm">
-                    C IT-SPK ваш офис будет работать эффективно и безотказно
-                </h4>
-                <div class="services__content">
-                    <p>
-                        За время работы мы подобрали оптимальные решения по соотношению цена-качество для организации офисной IT-инфраструктуры. Огромный опыт обслуживания объектов в Киеве от офиса на несколько рабочих мест до офисно-производственных комплексов на тысячи квадартных метров и более полутора сотен подключенных абонентов.
+                <div class="header__contact">
+                    <p>lifecell
+                        <a class="header__contact-link" href="tel:+380935412092">+380 93 541 20 92</a>
                     </p>
-                    <p>
-                        Абонентское обслуживание компьютеров в Киеве уже сейчас не оставляет шансов на выживание обычным сисадминам в штате компании, прежний подход дороже и неэффективный. С первого дня работы с нами вы получаете доступ ко всем нашим знаниям, опыту и ресурсам. 
+                    <p>Vodafone
+                        <a class="header__contact-link" href="tel:+380993112979">+380 99 311 29 79</a>
                     </p>
                 </div>
-                <button class="btn">
-                    <span>Отправить заявку</span>
-                    <svg class="top__icon" width="19" height="13">
-                        <use xlink:href="images/sprite.svg#btn"></use>  
-                    </svg> 
+                <button class="burger" type="button">
+                    <span class="visually-hidden">Бургер мню</span>
+                    <svg class="burger__icon" width="26" height="18">
+                        <use xlink:href="images/sprite.svg#burger"></use>
+                    </svg>
                 </button>
-            </div>
-        </section>
-
-        <section class="target">
-            <div class="container">
-                <div class="target__wrapper">
-                    <div class="target__inner">
-                        <svg class="target__icon" width="165" height="200">
-                            <use xlink:href="images/sprite-color.svg#target"></use>
+            </nav>
+        </header>
+        
+        <main class="main">
+            <div class="form-popup">
+                <button class="btn-close form-popup__btn">
+                    <svg class="menu-mob__icon" width="18" height="18">
+                        <use xlink:href="images/sprite.svg#close-btn"></use>
+                    </svg>
+                </button>
+                <form class="form--popup">
+                    <label class="visually-hidden" for="name">Введите имя</label>
+                    <input class="form__input form__input--popup" id="name" type="text" placeholder="Имя" name="[request]name">
+                    <label class="visually-hidden" for="tel">Введите номер телефона</label>
+                    <input class="form__input form__input--popup" type="tel" id="tel" placeholder="Номер телеофна*" name="[request]tel">
+                    <label class="visually-hidden" for="email">Введите емейл </label>
+                    <input class="form__input form__input--popup" type="email" id="email" placeholder="E-mail" name="[request]email">
+                    <label class="visually-hidden" for="massage">Введите Сообщение</label>
+                    <textarea class="form__input form__input--popup form__input--massage" placeholder="Сообщение" id="massage" name="[request]massage"></textarea>
+                    <label class="form__label">
+                        <span class="visually-hidden">Согласие на обработку персональных данных</span>
+                        <input class="form__input visually-hidden" type="checkbox" name="[request]checkbox">
+                        <span class="form__checkbox form__checkbox--popup"></span>
+                        <span class="form__text">Даю согласие на обработку персональных данных</span>
+                    </label>
+                    <button class="btn form__btn">
+                        <span>Отправить</span>
+                        <svg class="form__icon" width="19" height="13">
+                            <use xlink:href="images/sprite.svg#btn"></use>
                         </svg>
-                        <h2 class="title target__title">Цель IT-SPK</h2>
+                    </button>
+                </form>
+            </div>
+            <section class="menu-mob">
+                <div class="container">
+                    <div class="menu-mob__inner">
+                        <div class="menu-mob__top">
+                            <svg class="menu-mob__icon" width="160" height="60">
+                                <use xlink:href="images/sprite-color.svg#logo-mobile"></use>
+                            </svg>
+                            <button class="btn-close menu-mob__btn">
+                                <svg class="menu-mob__icon" width="18" height="18">
+                                    <use xlink:href="images/sprite.svg#close-btn"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="menu-mob__main">
+                            <div class="menu-mob__tel">
+                                <a class="menu-mob__link" href="tel:+380935412092">
+                                    +380 93 541 20 92
+                                </a>
+                                lifecell
+                            </div>
+                            <div class="menu-mob__tel">
+                                <a class="menu-mob__link" href="tel:+380993112979">
+                                    +380 99 311 29 79
+                                </a>
+                                Vodafone
+                            </div>
+                            <ul class="menu-mob__list">
+                                <li class="menu-mob__item">
+                                    <a class="menu-mob__nav-link" href="#">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="menu-mob__item">
+                                    <a class="menu-mob__nav-link" href="#">
+                                        Услуги
+                                    </a>
+                                </li>
+                                <li class="menu-mob__item">
+                                    <a class="menu-mob__nav-link" href="#">
+                                        Цены
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="menu-mob__wrapper">
+                                <a class="menu-mob__lang menu-mob__lang--active" href="#">
+                                    UA
+                                </a>
+                                <a class="menu-mob__lang" href="#">
+                                    RU
+                                </a>
+                            </div>
+                            <button class=" btn-js">
+                                <span>Отправить заявку</span>
+                                <svg class="top__icon" width="19" height="13">
+                                    <use xlink:href="images/sprite.svg#btn"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <h3 class="target__subtitle">
-                        Сократить расходы на ИТ + оптимизировать работу = увеличить вашу прибыль и отрыв от конкурентов
-                    </h3>
                 </div>
-            </div>
-        </section>
-
-        <section class="connect">
-            <div class="container">
-                <h2 class="title connect__title">
-                    Подключить обслуживание компьютеров у нас очень просто
-                </h2>
-                <ul class="connect__list">
-                    <li class="connect__item">
-                        <p class="connect__text">
-                            Оставить заявку на сайте или просто позвонить нам
-                        </p>
-                    </li>
-                    <li class="connect__item connect__item--two">
-                        <p class="connect__text">
-                            Мы проведем бесплатный аудит и подготовим коммерческое предложение
-                        </p>
-                    </li>
-                    <li class="connect__item connect__item--three">
-                        <p class="connect__text">
-                            Заключаем договор и ваш офис работает безотказно
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="price">
-            <div class="container">
-                <h2 class="title price__title">
-                    Цены
-                </h2>
-                <div class="price__content">
-                    <div class="price__inner">
-                        <p class="price__text">
-                            У нас нет зарплаты или фиксированной суммы в месяц, все рассчеты базируются только на количестве компьютеров, которые мы берем на обслуживание и подключенных услугах. Платите только за что чем пользуетесь - <span>максимальная экономия и эффективность</span>
-                        </p>
-                        <p class="price__text">
-                            Оставьте заявку на обслуживание компьютеров и мы подготовим предложение специально для вас
+            </section>
+            <section class="top">
+                <div class="container">
+                    <h1 class="top__title">
+                        IT-Аутсорсинг компаниям в Киеве
+                    </h1>
+                    <div class="top__content">
+                        <div class="top__inner">
+                            <h2 class="top__subtitle">Обслуживание компьютеров в Киеве</h2>
+                            <p class="top__info">
+                                От <span class="top__num">315</span><span class="top__cash">грн</span> грн/мес за 1 рабочее место
+                            </p>
+                            <button class="btn top__btn btn-js">
+                                <span>Отправить заявку</span>
+                                <svg class="top__icon" width="19" height="13">
+                                    <use xlink:href="images/sprite.svg#btn"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="top__text">
+                            Мы знаем как сложно найти хорошую компанию по обслуживанию компьютеров в Киеве. Исправим это!
                         </p>
                     </div>
-                    <div class="price__buttons">
-                        <button class="btn btn--opacity" type="button">
-                            <span>Прайс it</span>
-                            <svg class="price__icon" width="22" height="21">
-                                <use xlink:href="images/sprite.svg#download"></use>
-                            </svg>
-                        </button>
-                        <button class="btn btn--opacity" type="button">
-                            <span>Прайс монтаж</span>
-                            <svg class="price__icon" width="22" height="21">
-                                <use xlink:href="images/sprite.svg#download"></use>
-                            </svg>
-                        </button>   
+                </div>
+            </section>
+            <section class="about" id="#about">
+                <div class="container">
+                    <div class="about__inner">
+                        <h2 class="title about__title">
+                            О нас
+                        </h2>
+                        <p class="about__text">
+                            IT-SPK - сервисная компания по обслуживанию АйТи инфраструктуры для бизнеса. Мы небольшая команда фанатов своего дела c многолетним опытом работы. Решаем любые ИТ задачи в Киеве: проектирование, монтаж и поддержка ИТ инфраструктуры, настройка и поддержка серверов, виртуализация, обслуживание компьютеров, поддержка пользователей.
+                        </p>
                     </div>
-                    <ul class="price__list">
-                        <li class="price__item">
-                            <span>Тарифный план</span>
-                            <span>Легкий старт</span>
-                            <span>350</span>
-                            <span>грн/мес</span>
-                            <span>за 1 рабочее место</span>
+                </div>
+            </section>
+            <section class="services" id="services">
+                <div class="container">
+                    <h2 class="title services__title">
+                        Услуги
+                    </h2>
+                    <ul class="services__list">
+                        <li class="services__item services__item--comp">
+                            <h3 class="services__subtitle">
+                                Обслуживание компьютеров
+                            </h3>
                         </li>
-                        <li class="price__item">
-                            <span>Тарифный план</span>
-                            <span>Бизнес</span>
-                            <span>315</span>
-                            <span>грн/мес</span>
-                            <span>от 15 рабочих мест</span>
+                        <li class="services__item services__item--server">
+                            <h3 class="services__subtitle">
+                                Обслуживание серверов
+                            </h3>
+                        </li>
+                        <li class="services__item services__item--1c">
+                            <h3 class="services__subtitle">
+                                Виртуализация 1С
+                            </h3>
+                        </li>
+                        <li class="services__item services__item--project">
+                            <h3 class="services__subtitle">
+                                Аудит ИТ-инфраструктуры
+                                и проектирование
+                            </h3>
+                        </li>
+                        <li class="services__item services__item--copy">
+                            <h3 class="services__subtitle">
+                                Резервное копирование
+                            </h3>
+                        </li>
+                        <li class="services__item services__item--it">
+                            <h3 class="services__subtitle">
+                                Переезд ИТ инфраструктуры
+                            </h3>
                         </li>
                     </ul>
-                </div> 
-            </div>
-        </section>
-
-        <section class="client">
-            <div class="container">
-                <h2 class="title client__title">
-                    Клиенты
-                </h2>
-                <ul class="client__list">
-                    <li class="client__item">
-                        <a class="client__link" href="#" >
-                            <img class="client__img" src="./images/content/clients/solutions.png" alt="solutions" width="162" height="110">
-                        </a>
-                    </li>
-                    <li class="client__item">
-                        <a class="client__link" href="#" >
-                            <img class="client__img" src="./images/content/clients/sd.png" alt="servicediet" width="162" height="110">
-                        </a>
-                    </li>
-                    <li class="client__item">
-                        <a class="client__link" href="#" >
-                            <img class="client__img" src="./images/content/clients/cmdyellow.png" alt="Content Marketing Digital" width="162" height="110">
-                        </a>
-                    </li>
-                    <li class="client__item">
-                        <a class="client__link" href="#" >
-                            <img class="client__img" src="./images/content/clients/Dezex.png" alt="Dezex  " width="162" height="110">
-                        </a>
-                    </li>
-                    <li class="client__item">
-                        <a class="client__link" href="#" >
-                            <img class="client__img" src="./images/content/clients/amigatraid.png" alt="amiga traid" width="162" height="110">
-                        </a>
-                    </li>
-                </ul>
-
-                <h3 class="client__subtitle"> 
-                    Организация IT-инфраструктуры в Киеве
-                </h3>
-
-                <div class="client__inner">
-                    <div class="client__content">
+                    <h4 class="title services__title-sm">
+                        C IT-SPK ваш офис будет работать эффективно и безотказно
+                    </h4>
+                    <div class="services__content">
                         <p>
-                            Мы имеем большой опыт организации работы IT отделов разных компаний из города Киев и на основе этого создали универсальный протокол работы, который гарантирует стабильно высокое качество предоставления услуг.
+                            За время работы мы подобрали оптимальные решения по соотношению цена-качество для организации офисной IT-инфраструктуры. Огромный опыт обслуживания объектов в Киеве от офиса на несколько рабочих мест до офисно-производственных комплексов на тысячи квадартных метров и более полутора сотен подключенных абонентов.
                         </p>
                         <p>
-                            Всегда на старте проводим аудит существующих апаратных и программных решений. Берем во внимание как проложены сети, установленное серверное и коммутационное оборудование, к каким провайдерам и на каких условиях подключено. Анализ установленных компьютеров и оборудования, завязанных в сеть компании. По результатам этого этапа работы мы даем комплексный отчет с перечнем найденных критических и потенциально проблемных мест в ИТ-инфраструктуре компании, с вариантами их устранения.
-                        </p>
-                        <p>
-                            В случае если идет проектирование IT-инфраструктуры с нуля, мы учтем все пожелания и сразу сделаем все необходимое для бесперебойной работы компьютерной сети компании.
-                        </p>
-                        <p>
-                            Спланируем и организуем переезд всех IT-систем офиса на новую локацию или удаленную работу сотрудников при необходимости.
+                            Абонентское обслуживание компьютеров в Киеве уже сейчас не оставляет шансов на выживание обычным сисадминам в штате компании, прежний подход дороже и неэффективный. С первого дня работы с нами вы получаете доступ ко всем нашим знаниям, опыту и ресурсам.
                         </p>
                     </div>
-                    <div class="client__content">
-                        <p>
-                            Услуги обслуживания компьютеров и серверов в Киеве это не только установить Windows и кинуть провод, это большой и сложный комплекс услуг:
-                        </p>
-                        <span>- Установка, настройка и сопровождение ПО;</span>
-                        <span>- Администрирование доменных, почтовых, файловых и хостинг серверов;</span>
-                        <span>- Обеспечение защиты данных;</span>
-                        <span>- Восстановление потерянных данных;</span>
-                        <span>- Внедрение решений по защите конфиденциальной информации;</span>
-                        <span>- Безопасный удаленный доступ к информации;</span>
-                        <span>- Обслуживание бухгалтерских программ 1С Предприятие, M.E.Doc и других;</span>
-                        <span>- Внедрение и сопровождение серверов IP телефонии;</span>
-                        <span>- Монтаж и обслуживание сетей (СКС);</span>
-                        <span>- Ремонт и обслуживание компьютеров, оргтехники.</span>
-                        <span>- Оперативная техническая поддержка  и консультация сотрудников</span>
-                        <span>- Ведение первичной документации, сметы, логистика, снабжение ИТ-отдела.</span>
-                    </div>
+                    <button class="btn btn-js">
+                        <span>Отправить заявку</span>
+                        <svg class="top__icon" width="19" height="13">
+                            <use xlink:href="images/sprite.svg#btn"></use>
+                        </svg>
+                    </button>
                 </div>
-            </div>
-        </section>
-
-        <section class="request">
-            <div class="container"> 
-                <div class="request__inner">
-                    <h2 class="request__title">
-                        Оставьте заявку на обслуживание компьютеров и мы свяжемся с вами
-                    </h2>
-                    <form class="request__form">
-                        <label class="visually-hidden" for="name">Введите имя</label>
-                        <input class="request__input" id="name" type="text" placeholder="Имя" name="[request]name">
-
-                        <label class="visually-hidden" for="tel">Введите номер телефона</label>
-                        <input class="request__input" type="tel" id="tel" placeholder="Номер телеофна*" name="[request]tel">
-
-                        <label class="visually-hidden" for="email">Введите емейл </label>
-                        <input class="request__input" type="email" id="email" placeholder="E-mail" name="[request]email">
-
-                        <label class="visually-hidden" for="massage">Введите Сообщение</label>
-                        <textarea class="request__input request__input--massage" placeholder="Сообщение" id="massage" name="[request]massage"></textarea>
-
-                        <label class="request__label">
-                            <span class="visually-hidden">Согласие на обработку персональных данных</span>
-                            <input class="request__input visually-hidden" type="checkbox" name="[request]checkbox">
-                            <span class="request__checkbox"></span>
-                            <span class="request__text">Даю согласие на обработку персональных данных</span>
-                        </label>
-                        
-                        <button class="btn request__btn">
-                            <span>Отправить</span>
-                            <svg class="request__icon" width="19" height="13">
-                                <use xlink:href="images/sprite.svg#btn"></use>
+            </section>
+            <section class="target">
+                <div class="container">
+                    <div class="target__wrapper">
+                        <div class="target__inner">
+                            <svg class="target__icon" width="165" height="200">
+                                <use xlink:href="images/sprite-color.svg#target"></use>
                             </svg>
-                        </button>
-                    </form>
+                            <h2 class="title target__title">Цель IT-SPK</h2>
+                        </div>
+                        <h3 class="target__subtitle">
+                            Сократить расходы на ИТ + оптимизировать работу = увеличить вашу прибыль и отрыв от конкурентов
+                        </h3>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-    </main>
+            </section>
+            <section class="connect">
+                <div class="container">
+                    <h2 class="title connect__title">
+                        Подключить обслуживание компьютеров у нас очень просто
+                    </h2>
+                    <ul class="connect__list">
+                        <li class="connect__item">
+                            <p class="connect__text">
+                                Оставить заявку на сайте или просто позвонить нам
+                            </p>
+                        </li>
+                        <li class="connect__item connect__item--two">
+                            <p class="connect__text">
+                                Мы проведем бесплатный аудит и подготовим коммерческое предложение
+                            </p>
+                        </li>
+                        <li class="connect__item connect__item--three">
+                            <p class="connect__text">
+                                Заключаем договор и ваш офис работает безотказно
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="price" id="price">
+                <div class="container">
+                    <h2 class="title price__title">
+                        Цены
+                    </h2>
+                    <div class="price__content">
+                        <div class="price__inner">
+                            <p class="price__text">
+                                У нас нет зарплаты или фиксированной суммы в месяц, все рассчеты базируются только на количестве компьютеров, которые мы берем на обслуживание и подключенных услугах. Платите только за что чем пользуетесь - <span>максимальная экономия и эффективность</span>
+                            </p>
+                            <p class="price__text">
+                                Оставьте заявку на обслуживание компьютеров и мы подготовим предложение специально для вас
+                            </p>
+                        </div>
+                        <div class="price__buttons">
+                            <button class="btn btn--opacity" type="button">
+                                <span>Прайс it</span>
+                                <svg class="price__icon" width="22" height="21">
+                                    <use xlink:href="images/sprite.svg#download"></use>
+                                </svg>
+                            </button>
+                            <button class="btn btn--opacity" type="button">
+                                <span>Прайс монтаж</span>
+                                <svg class="price__icon" width="22" height="21">
+                                    <use xlink:href="images/sprite.svg#download"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="price__list">
+                            <li class="price__item">
+                                <span>Тарифный план</span>
+                                <span>Легкий старт</span>
+                                <span>350</span>
+                                <span>грн/мес</span>
+                                <span>за 1 рабочее место</span>
+                            </li>
+                            <li class="price__item">
+                                <span>Тарифный план</span>
+                                <span>Бизнес</span>
+                                <span>315</span>
+                                <span>грн/мес</span>
+                                <span>от 15 рабочих мест</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="client">
+                <div class="container">
+                    <h2 class="title client__title">
+                        Клиенты
+                    </h2>
+                    <ul class="client__list">
+                        <li class="client__item">
+                            <a class="client__link" href="#" >
+                                <img class="client__img" src="./images/content/clients/solutions.png" alt="solutions" width="162" height="110">
+                            </a>
+                        </li>
+                        <li class="client__item">
+                            <a class="client__link" href="#" >
+                                <img class="client__img" src="./images/content/clients/sd.png" alt="servicediet" width="162" height="110">
+                            </a>
+                        </li>
+                        <li class="client__item">
+                            <a class="client__link" href="#" >
+                                <img class="client__img" src="./images/content/clients/cmdyellow.png" alt="Content Marketing Digital" width="162" height="110">
+                            </a>
+                        </li>
+                        <li class="client__item">
+                            <a class="client__link" href="#" >
+                                <img class="client__img" src="./images/content/clients/Dezex.png" alt="Dezex  " width="162" height="110">
+                            </a>
+                        </li>
+                        <li class="client__item">
+                            <a class="client__link" href="#" >
+                                <img class="client__img" src="./images/content/clients/amigatraid.png" alt="amiga traid" width="162" height="110">
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="client__subtitle">
+                        Организация IT-инфраструктуры в Киеве
+                    </h3>
+                    <div class="client__inner">
+                        <div class="client__content">
+                            <p>
+                                Мы имеем большой опыт организации работы IT отделов разных компаний из города Киев и на основе этого создали универсальный протокол работы, который гарантирует стабильно высокое качество предоставления услуг.
+                            </p>
+                            <p>
+                                Всегда на старте проводим аудит существующих апаратных и программных решений. Берем во внимание как проложены сети, установленное серверное и коммутационное оборудование, к каким провайдерам и на каких условиях подключено. Анализ установленных компьютеров и оборудования, завязанных в сеть компании. По результатам этого этапа работы мы даем комплексный отчет с перечнем найденных критических и потенциально проблемных мест в ИТ-инфраструктуре компании, с вариантами их устранения.
+                            </p>
+                            <p>
+                                В случае если идет проектирование IT-инфраструктуры с нуля, мы учтем все пожелания и сразу сделаем все необходимое для бесперебойной работы компьютерной сети компании.
+                            </p>
+                            <p>
+                                Спланируем и организуем переезд всех IT-систем офиса на новую локацию или удаленную работу сотрудников при необходимости.
+                            </p>
+                        </div>
+                        <div class="client__content">
+                            <p>
+                                Услуги обслуживания компьютеров и серверов в Киеве это не только установить Windows и кинуть провод, это большой и сложный комплекс услуг:
+                            </p>
+                            <span>- Установка, настройка и сопровождение ПО;</span>
+                            <span>- Администрирование доменных, почтовых, файловых и хостинг серверов;</span>
+                            <span>- Обеспечение защиты данных;</span>
+                            <span>- Восстановление потерянных данных;</span>
+                            <span>- Внедрение решений по защите конфиденциальной информации;</span>
+                            <span>- Безопасный удаленный доступ к информации;</span>
+                            <span>- Обслуживание бухгалтерских программ 1С Предприятие, M.E.Doc и других;</span>
+                            <span>- Внедрение и сопровождение серверов IP телефонии;</span>
+                            <span>- Монтаж и обслуживание сетей (СКС);</span>
+                            <span>- Ремонт и обслуживание компьютеров, оргтехники.</span>
+                            <span>- Оперативная техническая поддержка  и консультация сотрудников</span>
+                            <span>- Ведение первичной документации, сметы, логистика, снабжение ИТ-отдела.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="request">
+                <div class="container">
+                    <div class="request__inner">
+                        <h2 class="request__title">
+                            Оставьте заявку на обслуживание компьютеров и мы свяжемся с вами
+                        </h2>
+                        <form class="form">
+                            <label class="visually-hidden" for="name">Введите имя</label>
+                            <input class="form__input" id="name" type="text" placeholder="Имя" name="[request]name">
+                            <label class="visually-hidden" for="tel">Введите номер телефона</label>
+                            <input class="form__input" type="tel" id="tel" placeholder="Номер телеофна*" name="[request]tel">
+                            <label class="visually-hidden" for="email">Введите емейл </label>
+                            <input class="form__input" type="email" id="email" placeholder="E-mail" name="[request]email">
+                            <label class="visually-hidden" for="massage">Введите Сообщение</label>
+                            <textarea class="form__input form__input--massage" placeholder="Сообщение" id="massage" name="[request]massage"></textarea>
+                            <label class="form__label">
+                                <span class="visually-hidden">Согласие на обработку персональных данных</span>
+                                <input class="form__input visually-hidden" type="checkbox" name="[request]checkbox">
+                                <span class="form__checkbox"></span>
+                                <span class="form__text">Даю согласие на обработку персональных данных</span>
+                            </label>
+        
+                            <button class="btn form__btn">
+                                <span>Отправить</span>
+                                <svg class="form__icon" width="19" height="13">
+                                    <use xlink:href="images/sprite.svg#btn"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
 
     <footer class="footer">
         <div class="container">

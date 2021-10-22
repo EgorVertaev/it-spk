@@ -1,4 +1,4 @@
-html,
+html, 
 body {
     min-height: 100vh;
     overflow-x: hidden;
@@ -15,6 +15,25 @@ body {
     flex-direction: column;
     position: relative;
 }
+
+.html-noscroll {
+    overflow:hidden;
+}
+
+.body-noscroll {
+    overflow:hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index:999;
+        background-color: rgba($dark, 50%);
+    }
+} 
 
 .visually-hidden {
     position: absolute;
@@ -97,8 +116,6 @@ body {
     }
 }
 
-
-
 main {
     margin-bottom: auto;
 }
@@ -106,5 +123,25 @@ main {
 .title {
     font-size: 50px;
     color: $dark;
+}
+
+.form-popup {
+    position: fixed;
+    top: -200%;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 999;
+    transition: top 0.2s linear;
+
+    &--show {
+        top: 50px;
+        z-index: 9999;
+    }
+
+    &__btn {
+        position: absolute;
+        right: 20px;
+        top: 40px;
+    }
 }
 

@@ -1,0 +1,108 @@
+.form {
+    max-width: 345px;
+    width: 100%;
+
+    @include r($md) {
+        margin: 0 auto;   
+    }
+
+    @include r($sm) {
+        max-width: 100%;    
+    }
+
+    &--popup {
+        background-color: $white;
+        padding: 96px 40px 40px;
+        
+    }
+
+    &__input {
+        display: block;
+        margin-bottom: 20px;
+        padding: 10px 20px 8px;
+        width: 100%;
+        outline: transparent;
+
+        &--massage {
+            resize: none;
+            height: 100px;
+        }
+
+        &::placeholder {
+            color: $dark;
+            font-weight: 400;
+        }
+
+        &:checked + .form__checkbox::after {
+            background-color: $dark;
+        }
+        
+        &:focus {
+            box-shadow: 0px 0px 0px 2px $accent;
+        }
+
+        &--popup {
+            background-color: $silver-200;
+            border-color: transparent;
+        }
+    }
+    
+    &__label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        cursor: pointer;
+
+        &:hover {
+            
+            .form__checkbox {
+                border-color: $accent;
+            }
+
+            .form__text {
+                color: $accent;
+            }
+        }
+    }    
+
+    &__checkbox {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: $white;
+        margin-right: 10px;
+        position: relative;
+        border: 2px solid $white;
+        transition: border-color 0.3s linear;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: transparent;
+            top: 3px;
+            left: 3px;    
+        }
+
+        &--popup {
+            background-color: $silver-200;
+            border-color: $silver-200;
+            &::after {
+                background-color: $accent;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 10px;
+        font-weight: 400;
+        color: $silver;
+        transition: color 0.3s linear;
+    }
+
+    &__btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
